@@ -1,0 +1,183 @@
+{
+  "id": "c0f12c42-f3f1-4f74-9ded-c514e19dd626",
+  "version": "2.0",
+  "name": "medrec_login",
+  "url": "https://129.146.161.23:7002",
+  "tests": [{
+    "id": "925f0328-abef-4b48-b962-8ff17c463063",
+    "name": "medrec_fredgolf",
+    "commands": [{
+      "id": "6529b5ea-37b8-4652-916c-a9f350725099",
+      "comment": "",
+      "command": "open",
+      "target": "/medrec/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9434412f-685b-4c21-99ad-225e08ee806f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1277x826",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b21267b-d22a-4bd9-8121-ec77680fb7bb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='bar']/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/medrec/index.xhtml')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3d4336e-6e35-419c-9d18-afb57043c47b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.featurette:nth-child(3) > .btn:nth-child(4)",
+      "targets": [
+        ["css=.featurette:nth-child(3) > .btn:nth-child(4)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login')])[3]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#patientModal')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0838b6b-ed83-4e65-a7b7-29d35b0ef121",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.featurette:nth-child(3) > .btn:nth-child(4)",
+      "targets": [
+        ["css=.featurette:nth-child(3) > .btn:nth-child(4)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login')])[3]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#patientModal')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b34fe56-fd29-4285-9885-ec5112156957",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.featurette:nth-child(3) > .btn:nth-child(4)",
+      "targets": [
+        ["css=.featurette:nth-child(3) > .btn:nth-child(4)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login')])[3]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#patientModal')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cba127d-05fb-4af2-9167-f8c0efc793f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=patientLogin:usernameInput",
+      "targets": [
+        ["id=patientLogin:usernameInput", "id"],
+        ["name=patientLogin:usernameInput", "name"],
+        ["css=#patientLogin\\3AusernameInput", "css:finder"],
+        ["xpath=//input[@id='patientLogin:usernameInput']", "xpath:attributes"],
+        ["xpath=//form[@id='patientLogin']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55fd3519-abb4-42bf-bae7-e02a1cec6137",
+      "comment": "",
+      "command": "type",
+      "target": "id=patientLogin:usernameInput",
+      "targets": [
+        ["id=patientLogin:usernameInput", "id"],
+        ["name=patientLogin:usernameInput", "name"],
+        ["css=#patientLogin\\3AusernameInput", "css:finder"],
+        ["xpath=//input[@id='patientLogin:usernameInput']", "xpath:attributes"],
+        ["xpath=//form[@id='patientLogin']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/form/input[2]", "xpath:position"]
+      ],
+      "value": "fred@golf.com"
+    }, {
+      "id": "3c2b01fa-73a2-4bff-b086-018044c48e07",
+      "comment": "",
+      "command": "click",
+      "target": "id=patientLogin:passwordInput",
+      "targets": [
+        ["id=patientLogin:passwordInput", "id"],
+        ["name=patientLogin:passwordInput", "name"],
+        ["css=#patientLogin\\3ApasswordInput", "css:finder"],
+        ["xpath=//input[@id='patientLogin:passwordInput']", "xpath:attributes"],
+        ["xpath=//form[@id='patientLogin']/input[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/form/input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27f7635e-048d-42d7-8a61-16fda34f4e96",
+      "comment": "",
+      "command": "type",
+      "target": "id=patientLogin:passwordInput",
+      "targets": [
+        ["id=patientLogin:passwordInput", "id"],
+        ["name=patientLogin:passwordInput", "name"],
+        ["css=#patientLogin\\3ApasswordInput", "css:finder"],
+        ["xpath=//input[@id='patientLogin:passwordInput']", "xpath:attributes"],
+        ["xpath=//form[@id='patientLogin']/input[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/form/input[3]", "xpath:position"]
+      ],
+      "value": "weblogic"
+    }, {
+      "id": "c55c6e45-baad-4d5e-9224-0901fcbccfcd",
+      "comment": "",
+      "command": "type",
+      "target": "id=adminLogin:passwordInput",
+      "targets": [
+        ["id=adminLogin:passwordInput", "id"],
+        ["name=adminLogin:passwordInput", "name"],
+        ["css=#adminLogin\\3ApasswordInput", "css:finder"],
+        ["xpath=//input[@id='adminLogin:passwordInput']", "xpath:attributes"],
+        ["xpath=//form[@id='adminLogin']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fea5c29a-3188-4708-8035-5056a1787acd",
+      "comment": "",
+      "command": "click",
+      "target": "id=patientLogin:action",
+      "targets": [
+        ["id=patientLogin:action", "id"],
+        ["name=patientLogin:action", "name"],
+        ["css=#patientLogin\\3A action", "css:finder"],
+        ["xpath=//input[@id='patientLogin:action']", "xpath:attributes"],
+        ["xpath=//form[@id='patientLogin']/input[4]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/form/input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2620975-857f-4873-afd1-d420a7b970d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3c03caf4-2164-4361-8edf-225b4ab39cca",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["925f0328-abef-4b48-b962-8ff17c463063"]
+  }],
+  "urls": ["https://129.146.161.23:7002/"],
+  "plugins": []
+}
