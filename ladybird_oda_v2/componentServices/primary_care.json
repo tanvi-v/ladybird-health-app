@@ -1,0 +1,10 @@
+{
+  "type" : "HOSTED",
+  "name" : "primary_care",
+  "packageFileName" : "custom-component-default-pkg-1.0.0.tgz",
+  "packageChecksum" : "3f3cec82c004d6e41b79eb4cbeac59cc",
+  "runtime" : "node",
+  "loggingEnabled" : false,
+  "enabled" : true,
+  "trackingId" : "3ec97727-bbe9-4273-a761-e79cc58a6bbb"
+}

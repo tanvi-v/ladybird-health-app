@@ -1,0 +1,25 @@
+{
+  "languageTag" : "default",
+  "keys" : {
+    "system.intent.findOpen.conversationName" : {
+      "message" : "FindOpen",
+      "extensionType" : null,
+      "trackingId" : "472BA43A-0B0A-45F5-8E16-C9DBE1F977A6"
+    },
+    "system.intent.findDoctor.conversationName" : {
+      "message" : "FindDoctor",
+      "extensionType" : null,
+      "trackingId" : "8F2470C7-F672-48D1-B235-0990F171BB91"
+    },
+    "system.intent.findClinic.conversationName" : {
+      "message" : "findClinic",
+      "extensionType" : null,
+      "trackingId" : "F7CAA0E8-3DF0-471A-A88A-00322194BF7B"
+    },
+    "system.intent.bye.conversationName" : {
+      "message" : "Intent1",
+      "extensionType" : null,
+      "trackingId" : "84730DD2-246C-40A7-8287-E859632E75FC"
+    }
+  }
+}

@@ -1,0 +1,353 @@
+#metadata: information about the flow
+#  platformVersion: the version of the bots platform that this flow was written to work with 
+metadata:
+  platformVersion: "1.1"
+main: true
+name: Ladybird
+
+context:
+  variables:
+
+    greeting: "string"
+    name: "string"
+    iResult: "nlpresult"
+    
+    dayOfWeek: "string"
+    hoursAPI: "string"
+    hoursList: "string"
+    
+    walkinAPI: "string"
+    walkinList: "string"
+    
+    primaryAPI: "string"
+    primaryList: "string"
+    
+    pediatricianAPI: "string"
+    pediatricianList: "string"
+    
+    speciality: "string"
+    specialityAPI: "string"
+    specialityList: "string"
+    
+    errorMessage: "string"
+    
+    autoTranslate: "boolean"
+
+
+states:
+
+  #helloWorld:
+  #  component: "hello.world"   
+  #  properties:
+  #    human: "tanvi"
+  #  transitions: {}
+    
+  #printDayOfWeek:
+  #  component: "System.Output"
+  #  properties:
+  #    text: "Today is: ${dayOfWeek}"
+  #  transitions: {}
+
+############## set APIs ###############
+
+  setAutoTranslate:
+    component: "System.SetVariable"
+    properties:
+      variable: "autoTranslate"
+      value: true
+    transitions: {}
+    
+  detect:
+    component: "System.DetectLanguage"
+    transitions: {}
+  
+  setPrimaryAPI:
+    component: "System.SetVariable"
+    properties:
+      variable: "primaryAPI" 
+      value: "https://d0dp28asaenqcw8-lbhackathon.adb.us-ashburn-1.oraclecloudapps.com/ords/lbhackathon/clinicAPI/primary"
+    transitions: {}
+  
+  setPediatricianAPI:
+    component: "System.SetVariable"
+    properties:
+      variable: "pediatricianAPI" 
+      value: "https://d0dp28asaenqcw8-lbhackathon.adb.us-ashburn-1.oraclecloudapps.com/ords/lbhackathon/clinicAPI/pediatrician"
+    transitions: {}
+  
+  setSpecialityAPI:
+    component: "System.SetVariable"
+    properties:
+      variable: "specialityAPI" 
+      value: "https://d0dp28asaenqcw8-lbhackathon.adb.us-ashburn-1.oraclecloudapps.com/ords/lbhackathon/clinicAPI/speciality/"
+    transitions: {}
+    
+  setDayOfWeek:
+    component: "System.SetVariable"
+    properties:
+      variable: "dayOfWeek"
+      value: "${.now?string['EEEE']}"
+    transitions: {}
+  
+  setHoursAPI:
+    component: "System.SetVariable"
+    properties:
+      variable: "hoursAPI" 
+      value: "https://d0dp28asaenqcw8-lbhackathon.adb.us-ashburn-1.oraclecloudapps.com/ords/lbhackathon/hours/"
+    transitions: {}
+    
+  setwalkinAPI:
+    component: "System.SetVariable"
+    properties:
+      variable: "walkinAPI" 
+      value: "https://d0dp28asaenqcw8-lbhackathon.adb.us-ashburn-1.oraclecloudapps.com/ords/lbhackathon/walkin/"
+    transitions: {}
+  
+  welcome:
+    component: "System.List"
+    properties: 
+      prompt: "Hi! Welcome to Ladybird Health Services! How can we help you today?"
+      options: 
+      - label: "Find a Walk-in Clinic"
+        value: "findClinic" 
+      - label: "Find a Doctor"
+        value: "findDoctor"
+      - label: "What's Open?"
+        value: "findOpen"
+    transitions:
+      actions:
+        findClinic: "findClinic"
+        findDoctor: "findDoctor"
+        findOpen: "findOpen"   
+  
+  Intent:
+    component: "System.Intent"
+    properties:
+      variable: "iResult"
+    transitions:
+      actions:
+        unresolvedIntent: "Unresolved"
+        bye: "Finish"
+        findClinic: "findClinic"
+        findDoctor: "findDoctor"
+        findOpen: "findOpen"
+        # You can add an intent action here
+        # e.g. Intent1 : "startIntent1"
+  
+  
+############ Find Immediate Assistance #############
+
+  findClinic:
+    component: "WalkIn"
+    properties:
+      walkinAPI: "${walkinAPI.value}"
+      dayOfWeek: "${dayOfWeek.value}"
+    transitions:
+      actions:
+        valid: "showWalkin"
+        invalid: "Error"
+        empty: "emptyw"
+      
+  showWalkin:
+    component: "System.Output"
+    properties:
+      text: "${walkinList}"
+      keepTurn: true
+    transitions:
+      next: "AnythingElse"
+  
+  emptyw:
+    component: "System.List"
+    properties: 
+      prompt: "Unfortunately, no walk-in locations are currently open. Would you like to see which appointment-based locations are available?"
+      options: 
+      - label: "Yes"
+        value: "yes" 
+      - label: "No"
+        value: "no"
+    transitions:
+      actions:
+        yes: "findOpen"
+        no: "AnythingElse"  
+  
+
+############## Find Doctor Flow ##############
+
+  findDoctor:
+    component: "System.List"
+    properties: 
+      prompt: "What type of Doctor are you searching for?"
+      options:
+      - label: "Primary Care Physician"
+        value: "pcp"
+      - label: "Speciality Care"
+        value: "scd"
+    transitions:
+      actions:
+        pcp: "primaryCare"
+        scd: "specialityCare"
+  
+  
+  ##### Primary Care #####
+  
+  primaryCare:
+    component: "System.List"
+    properties: 
+      prompt: "Is the patient above the age of 18?"
+      options:
+      - label: "Yes"
+        value: "yes"
+      - label: "No"
+        value: "no"
+    transitions:
+      actions:
+        yes: "adultCare"
+        no: "childCare"
+  
+  adultCare:
+    component: "GetPrimary"
+    properties: 
+      primaryAPI: "${primaryAPI.value}"
+    transitions:
+      actions:
+        valid: "showAdult"
+        invalid: "Error"
+      
+  showAdult:
+    component: "System.Output"
+    properties:
+      text: "${primaryList}"
+      keepTurn: true
+    transitions:
+      next: "AnythingElse"
+  
+  childCare:
+    component: "GetPediatricians"
+    properties: 
+      pediatricianAPI: "${pediatricianAPI.value}"
+    transitions:
+      actions:
+        valid: "showPediatricians"
+        invalid: "Error"     
+  
+  showPediatricians:
+    component: "System.Output"
+    properties:
+      text: "${pediatricianList}"
+      keepTurn: true
+    transitions:
+      next: "AnythingElse"
+  
+  
+  ##### Speciality Care #####
+  
+  specialityCare:
+    component: "System.List"
+    properties: 
+      prompt: "Which type of Speciality Care are you looking for?"
+      options:
+      - label: "Cardiology"
+        value: "cardiology"
+      - label: "OBGYN"
+        value: "obgyn"
+      - label: "Psychiatry"
+        value: "psychiatry"
+      - label: "General Dentist"
+        value: "dental_adult"
+      - label: "Pediatric Dentist"
+        value: "dental_child"
+      variable: "speciality"
+    transitions: {}
+      
+  
+  getSpecialists:
+    component: "GetSpecialist"
+    properties: 
+      specialityAPI: "${specialityAPI.value}"
+      speciality: "${speciality.value}"
+    transitions:
+      actions:
+        valid: "showSpeciality"
+        invalid: "Error"
+      
+  showSpeciality:
+    component: "System.Output"
+    properties:
+      text: "${specialityList}"
+      keepTurn: true
+    transitions:
+      next: "AnythingElse"
+    
+
+  ##### Walk-In Care #####
+  
+  walkIn:
+    component: "System.Output"
+    properties: 
+      text: "Here is a list of walk-in clinics near you. Please let me know if I can help with anything else!"
+    transitions:
+      next: "Intent"
+
+
+############## Find Open Flow ###############
+
+  findOpen:
+    component: "WhatsOpen"
+    properties: 
+      hoursAPI: "${hoursAPI.value}"
+      dayOfWeek: "${dayOfWeek.value}"
+    transitions:
+      actions:
+        valid: "showOpen"
+        invalid: "Error"
+        empty: "empty"
+      
+  showOpen:
+    component: "System.Output"
+    properties:
+      text: "${hoursList}"
+      keepTurn: true
+    transitions:
+      next: "AnythingElse"
+  
+  empty:
+    component: "System.Output"
+    properties:
+      text: "${hoursList}"
+      keepTurn: true
+    transitions:
+      next: "AnythingElse"
+
+
+############ Unresolved #############
+
+  AnythingElse:
+    component: "System.Output"
+    properties:
+      text: "Please let me know if I can help with anything else!"
+    transitions:
+      next: "Intent"
+  
+  Unresolved:
+    component: "System.Output"
+    properties: 
+      text: "Sorry, I didn't quite get that!"
+    transitions:
+      next: "Intent"
+  
+  Finish:
+    component: "System.Output"
+    properties: 
+      text: "Glad I could help!"
+    transitions:
+      return: "done"
+  
+  Error:
+    component: "System.Output"
+    properties: 
+      text: "${errorMessage.value}"
+    transitions:
+      return: "done"
+      
+      
+    

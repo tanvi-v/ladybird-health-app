@@ -1,0 +1,129 @@
+{
+  "name" : "findClinic",
+  "type" : "NLPIntent",
+  "trackingId" : "4A06E2C9-D244-4608-9D74-E5AC530CC15A",
+  "enabled" : true,
+  "intentParameters" : [ ],
+  "exampleData" : [ {
+    "sentence" : "I need immediate help",
+    "trackingId" : "F47FEDC9-D8AF-47BA-BC99-6A98D69D106B",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Nearest medical center",
+    "trackingId" : "4F9A68BF-5AED-49FF-A4A5-6C64B4530A80",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "clinic",
+    "trackingId" : "846A1399-4E1E-4AAE-9963-0760C4B079CA",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "walk-in clinic",
+    "trackingId" : "1E9D0CE1-87C2-4168-AB5E-B0ED3DD3EC55",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "i need to find help",
+    "trackingId" : "EC4BC71B-4308-4A4B-89B1-D3E9694CC03D",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "walk-in",
+    "trackingId" : "52E5B298-766D-4600-A2AA-6F0D5D35EA47",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "urgent care",
+    "trackingId" : "A713BD74-E8BC-4577-9872-FBEC84A83C5D",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "clínica",
+    "trackingId" : "60D98087-6177-4AD3-B0D7-A99A76F70660",
+    "translated" : "Clinical",
+    "detectedLanguage" : "es",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "necesito ayuda",
+    "trackingId" : "98BFEE68-671A-4AD9-9F1B-5A4FF186AFB3",
+    "translated" : "I need help",
+    "detectedLanguage" : "es",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "I have an emergency",
+    "trackingId" : "A6B1BD34-CDDA-4EF3-B5A6-EEA5F0A05546",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Clinic",
+    "trackingId" : "A393A129-D41F-45B5-A403-5581237F229B",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "emergency",
+    "trackingId" : "99B15FAA-0678-4E4F-9885-46B40C68122A",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "ER",
+    "trackingId" : "DC950924-C635-4412-ACA4-B159C5D71E21",
+    "translated" : "He",
+    "detectedLanguage" : "de",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "emergencia",
+    "trackingId" : "A9C0F80E-FA46-4CB8-B694-0D74F417859F",
+    "translated" : "Emergency",
+    "detectedLanguage" : "es",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "ayudame",
+    "trackingId" : "49280206-4814-4170-A469-576D1775DD0C",
+    "translated" : "Help me",
+    "detectedLanguage" : "es",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  } ],
+  "autoCompleteData" : [ ]
+}

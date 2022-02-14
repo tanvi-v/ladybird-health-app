@@ -1,0 +1,65 @@
+{
+  "name" : "findOpen",
+  "type" : "NLPIntent",
+  "trackingId" : "B1528B1C-F959-4800-9E7B-C55D5A47AC33",
+  "enabled" : true,
+  "intentParameters" : [ ],
+  "exampleData" : [ {
+    "sentence" : "What's open?",
+    "trackingId" : "683AE0ED-A1AA-44DB-90B5-DA8EC2B22666",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "What is open?",
+    "trackingId" : "1114285E-C56E-4503-874F-580A2DB28F01",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Open near me",
+    "trackingId" : "D2A97C78-4975-4F84-989A-D3EEC2E7A0D1",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Hours of operation",
+    "trackingId" : "0EFB2294-89E3-4352-B008-E903E8D15EE0",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "abierto",
+    "trackingId" : "0880E206-10EA-4C01-A070-415375A8B30A",
+    "translated" : "Open",
+    "detectedLanguage" : "es",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "horas de operacion",
+    "trackingId" : "DFF0C0C2-4618-4C51-B47C-03C7E005EF17",
+    "translated" : "hours of operation",
+    "detectedLanguage" : "es",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Que esta abierto?",
+    "trackingId" : "2D6F1FDF-2AE5-439C-82D9-1E2F501069C9",
+    "translated" : "What's open?",
+    "detectedLanguage" : "es",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  } ],
+  "autoCompleteData" : [ ]
+}

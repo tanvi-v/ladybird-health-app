@@ -1,0 +1,10 @@
+{
+  "type" : "HOSTED",
+  "name" : "open",
+  "packageFileName" : "custom-component-default-pkg-1.0.0.tgz",
+  "packageChecksum" : "ca2fb8235c5e497c4964f8ab1a095f1c",
+  "runtime" : "node",
+  "loggingEnabled" : false,
+  "enabled" : true,
+  "trackingId" : "d962b205-3a17-4912-9598-8a3b9c6f885f"
+}

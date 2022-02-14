@@ -1,0 +1,89 @@
+{
+  "name" : "findDoctor",
+  "type" : "NLPIntent",
+  "trackingId" : "D267098B-DA80-4AE3-83E3-AC7634F6D0B8",
+  "enabled" : true,
+  "intentParameters" : [ ],
+  "exampleData" : [ {
+    "sentence" : "Where can I find a doctor?",
+    "trackingId" : "8A1258AB-CEA1-4FE9-9CC4-C9E03A61F3BD",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "I'd like to find a doctor?",
+    "trackingId" : "DEE735D8-44EC-4720-9B4C-1E6BA60F1FA4",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "I'm sick",
+    "trackingId" : "8D9F6CB7-A410-4F26-856B-524B72B296CA",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "doctor",
+    "trackingId" : "ACF309C6-10CD-41F2-B5FC-A5F1BE148DF1",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "primary care physician",
+    "trackingId" : "3C171376-90C8-4A0A-B678-395642DF9FA8",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "doctora",
+    "trackingId" : "03E2C78B-A6FF-47AD-93A5-E60B267CE962",
+    "translated" : "Doctor",
+    "detectedLanguage" : "es",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "médico",
+    "trackingId" : "8BC0AD20-127F-4A9C-85B5-6AAA008A1522",
+    "translated" : "Doctor",
+    "detectedLanguage" : "es",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "médica",
+    "trackingId" : "0A28FEB3-A0DA-49DB-BF0D-86A458345345",
+    "translated" : "Medical",
+    "detectedLanguage" : "es",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "estoy enfermo",
+    "trackingId" : "00C5CC91-E8BB-41FB-817A-6CA60677F1BD",
+    "translated" : "I'm sick",
+    "detectedLanguage" : "es",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "encontrar un doctor",
+    "trackingId" : "A08C43C4-00A9-4723-96F7-16446147F33A",
+    "translated" : "find a doctor",
+    "detectedLanguage" : "es",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  } ],
+  "autoCompleteData" : [ ]
+}

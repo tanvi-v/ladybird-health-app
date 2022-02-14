@@ -1,0 +1,10 @@
+{
+  "type" : "HOSTED",
+  "name" : "specialist_care",
+  "packageFileName" : "custom-component-default-pkg-1.0.0.tgz",
+  "packageChecksum" : "5c2136fc5ef01a6b1a5c0ff768db3d15",
+  "runtime" : "node",
+  "loggingEnabled" : false,
+  "enabled" : true,
+  "trackingId" : "f0720e92-bf94-438c-8a51-fe8371892be7"
+}

@@ -1,0 +1,31 @@
+{
+  "settings" : {
+    "Multistage_Pipeline" : true,
+    "Verbose_Output" : false,
+    "Pipeline_Output_Size" : 100,
+    "Result_Size" : 10,
+    "botConfig" : [ {
+      "displayName" : "Welcome State",
+      "name" : "system.welcomeState",
+      "description" : "Welcome state for digital assistant",
+      "type" : "string",
+      "value" : ""
+    } ],
+    "dynamicEntityConfig" : {
+      "baseUrl" : null,
+      "interval" : 6
+    },
+    "translator" : "microsoft",
+    "timeouts" : {
+      "customComponent" : {
+        "readTimeout" : 60000
+      }
+    },
+    "aicConfig" : [ ]
+  },
+  "conversationHistoryEnabled" : false,
+  "insightsEnabled" : true,
+  "intentResultHistoryEnabled" : false,
+  "qnAResultHistoryEnabled" : false,
+  "trackingId" : "58D63727-9C0D-4974-9585-E0B781C87605"
+}

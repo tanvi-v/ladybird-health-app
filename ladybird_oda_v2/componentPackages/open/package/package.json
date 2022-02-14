@@ -1,0 +1,38 @@
+{
+  "name": "custom-component-default-pkg",
+  "version": "1.0.0",
+  "description": "Simple Bots Custom Components in form of npm package",
+  "main": "main.js",
+  "dependencies": {
+    "botkit-messenger-samples": "^1.1.0",
+    "dateformat": "^3.0.3",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "joi": "^9.2.0",
+    "log4js": "^0.6.38",
+    "nodemailer": "^4.6.7",
+    "random-number": "0.0.9",
+    "request": "^2.82.0",
+    "url": "^0.11.0"
+  },
+  "scripts": {
+    "bots-node-sdk": "bots-node-sdk",
+    "start": "npm run bots-node-sdk -- service .",
+    "prepack": "npm run bots-node-sdk -- pack --dry-run ."
+  },
+  "devDependencies": {
+    "@oracle/bots-node-sdk": "^2.2.2"
+  },
+  "bundledDependencies": [
+    "botkit-messenger-samples",
+    "dateformat",
+    "express",
+    "fs",
+    "joi",
+    "log4js",
+    "nodemailer",
+    "random-number",
+    "request",
+    "url"
+  ]
+}

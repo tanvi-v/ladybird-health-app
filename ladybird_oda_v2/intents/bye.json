@@ -1,0 +1,73 @@
+{
+  "name" : "bye",
+  "type" : "NLPIntent",
+  "trackingId" : "38A87FEE-188C-4600-A25B-25C4571E092F",
+  "enabled" : true,
+  "intentParameters" : [ ],
+  "exampleData" : [ {
+    "sentence" : "goodbye",
+    "trackingId" : "7942DF81-F293-45F8-8486-E3F4E8867034",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "bye",
+    "trackingId" : "9000E72C-D645-4286-A219-104EF018695A",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "I don't need help",
+    "trackingId" : "CF146890-21C2-4542-A88C-C90F1F232B2B",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "adios",
+    "trackingId" : "DBB0A97B-49CE-4D2B-A7B0-61E89CC4169A",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "no necesito ayuda",
+    "trackingId" : "4D723AE1-E1C6-4082-A638-C544B258BB3A",
+    "translated" : "I don't need any help",
+    "detectedLanguage" : "es",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "gracias por tu apoyo",
+    "trackingId" : "EE6B685A-5B49-4D36-B355-9522F544CC46",
+    "translated" : "thank you for your support",
+    "detectedLanguage" : "es",
+    "translatedLanguage" : "en",
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "no that's all",
+    "trackingId" : "D0DC7BBA-1386-4282-A09F-AC88E853A48A",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "thank you for your help",
+    "trackingId" : "E18333AB-55EF-427D-8016-3A66C732944E",
+    "translated" : null,
+    "detectedLanguage" : "en",
+    "translatedLanguage" : null,
+    "translatedBy" : "microsoft",
+    "exampleEntities" : [ ]
+  } ],
+  "autoCompleteData" : [ ]
+}

@@ -1,0 +1,10 @@
+{
+  "type" : "USER",
+  "trackingId" : "58D63727-9C0D-4974-9585-E0B781C87605",
+  "name" : "Ladybird",
+  "displayName" : "Ladybird",
+  "version" : "1.0",
+  "intentTrainer" : "Sakura",
+  "autoCompleteTrainingStatus" : "NO_DATA",
+  "requiresAutoCompleteTraining" : false
+}

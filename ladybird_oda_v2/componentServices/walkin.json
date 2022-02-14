@@ -1,0 +1,10 @@
+{
+  "type" : "HOSTED",
+  "name" : "walkin",
+  "packageFileName" : "custom-component-default-pkg-1.0.0.tgz",
+  "packageChecksum" : "3c22b0bd3b39262b29e565a731e2a26e",
+  "runtime" : "node",
+  "loggingEnabled" : false,
+  "enabled" : true,
+  "trackingId" : "97cf0c42-45e4-4cb5-88f3-d6791bd1a03f"
+}
